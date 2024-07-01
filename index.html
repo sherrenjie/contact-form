@@ -7,12 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Contact form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel ="stylesheet" href="styles.css">
 </head>
 <body>
   <div class = "contact-form">
@@ -47,6 +42,9 @@
           <div class="radio-option">
             <input type="radio" name="general-enquiry" id="enquiry-type" value="General Enquiry">
             <label for="general-enquiry">General Enquiry</label>
+          </div>
+
+          <div class="radio-option">
             <input type="radio" name="support-request" id="enquiry-type" value="Support Request">
             <label for="support-request">Support Request</label>
           </div>
@@ -64,26 +62,26 @@
       </div>
 
       <div class="form-item">
-        <div class="message">
-          <label for ="message">Message <span class="required-input">*</span></label>
-          <textarea name="message" id="message" rows="4"></textarea>
-          <p class="form-alert">This field is required</p>
-        </div>
-      </div>
-
-      <div class="form-item">
         <div>
          <input type="checkbox" name ="consent" id="consent">
          <label for = "consent">I consent to being contacted by the team <span class="required-input">*</span></label>
          <p class="form-alert">To submit this form, please consent to being contacted</p>
         </div>
       </div>
-
-
+      <button type="submit" id="submit-button" class="submit-button">Submit</button>
       </div>
     </form>
 
-  </div>
+    <div id="success-message" class="success-message">
+      <div class="message-header">
+        <img src="assets/images/icon-success-check.svg">
+        Message Sent!
+      </div>
+
+      <p>Thanks for completing the form!</p>
+
+    </div>
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
